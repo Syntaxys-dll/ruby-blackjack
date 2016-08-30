@@ -73,37 +73,3 @@ describe Dealer do
     expect(dealer.cards_value).to eq(18)
   end
 end
-
-describe Game do
-  it 'Should be 2 cards at palyer and 2 cards at dealer' do
-    expect(Game.new.player.cards.length).to eq(2)
-    expect(Game.new.dealer.cards.length).to eq(2)
-  end
-
-  describe 'verify_winner function check when' do
-    it 'get 21 points on the players first two cards, without a dealer blackjack.' do
-      expect(Game.new.verify_winner(21, 17)).to eq('Player')
-    end
-
-    it 'player reach a final score higher than the dealer without exceeding 21' do
-      expect(Game.new.verify_winner(21, 17)).to eq('Player')
-    end
-
-    it 'player scoring higher than 21' do
-      expect(Game.new.verify_winner(23, 12)).to eq('Dealer')
-    end
-
-    it 'dealer scoring higher than 21' do
-      expect(Game.new.verify_winner(13, 22)).to eq('Player')
-    end
-
-    it 'players win by not busting and having a total higher than the dealers.' do
-      expect(Game.new.verify_winner(19, 18)).to eq('Player')
-    end
-
-    it 'player and dealer have the same total, this is called a "push", no winner' do
-      expect(Game.new.verify_winner(21, 21)).to eq('No one')
-    end
-
-  end
-end
