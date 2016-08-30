@@ -1,5 +1,6 @@
-# ruby-blackjack
-**Test job for ruby junior vacancy.**
+# ruby-blackjack [![Code Climate](https://codeclimate.com/github/Syntaxys-dll/ruby-blackjack/badges/gpa.svg)](https://codeclimate.com/github/Syntaxys-dll/ruby-blackjack)
+
+**Test job for ruby junior vacancy.**  
 
 Launch it: 
 
@@ -16,3 +17,7 @@ Maybe you need rspec:
 **TODO:**
 
 * Ask about counting aces.
+
+
+
+
