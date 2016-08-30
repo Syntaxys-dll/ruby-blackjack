@@ -4,7 +4,7 @@
 
 Launch it: 
 
-`ruby blackjack.rb`
+`ruby blackjack.rb -start`
 
 Test it: 
 
