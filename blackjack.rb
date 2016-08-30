@@ -70,4 +70,7 @@ class Game
   end
 end
 
-Game.new
+if ARGV.first == '-start'
+  ARGV.clear
+  Game.new
+end
